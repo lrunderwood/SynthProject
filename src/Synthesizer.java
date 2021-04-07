@@ -13,7 +13,8 @@ public class Synthesizer {
             System.out.println("Invalid Midi Data Exception");
         }
         long timeStamp = -1;
-
+        
+        //Open receiver
         try {
             Receiver rcvr = MidiSystem.getReceiver();
             rcvr.send(myMsg, timeStamp);
